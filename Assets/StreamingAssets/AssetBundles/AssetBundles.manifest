@@ -1,7 +1,10 @@
 ManifestFileVersion: 0
-CRC: 1771505652
+CRC: 137719702
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: spikesnew
+      Dependencies: {}
+    Info_1:
+      Name: skybundle
       Dependencies: {}

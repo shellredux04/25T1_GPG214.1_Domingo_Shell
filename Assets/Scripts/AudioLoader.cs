@@ -23,13 +23,13 @@ public class AudioLoader : MonoBehaviour
 
         streamingPath = Application.streamingAssetsPath;
 
-        // Log the path to ensure it's correct
         Debug.Log("📂 StreamingAssets Path: " + streamingPath);
 
         // Start with default music
         StartCoroutine(LoadAndPlayMusic(musicGameplay));
     }
 
+    // Press 1 for default music - Press 2 for another music
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -49,7 +49,6 @@ public class AudioLoader : MonoBehaviour
         string filePath = Path.Combine(streamingPath, fileName);
         string url = "file://" + filePath;
 
-        // Log the full file path being used
         Debug.Log("📂 File Path: " + filePath);
 
         if (!File.Exists(filePath))
