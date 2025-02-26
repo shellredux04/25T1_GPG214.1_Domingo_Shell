@@ -1,0 +1,3 @@
+Health: 100
+Respawn Location: 107.756,25.02,0
+Power-up Active: False

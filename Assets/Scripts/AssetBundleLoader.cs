@@ -13,22 +13,22 @@ public class AssetBundleLoader : MonoBehaviour
 
     private void Start()
     {
-        // Load asset bundle from path
+        
         LoadAssetBundle();
 
-        // Load Prefab
+        
         LoadObstacle();
 
-        // Load Sprite
+         
         LoadSprite();
     }
 
     void LoadAssetBundle()
 {      
-    // Add platform-specific folder (StandaloneOSXUniversal)
+    
     assetBundlePath = Path.Combine(Application.streamingAssetsPath, "AssetBundles", fileName);
 
-    Debug.Log("🔍 Checking path: " + assetBundlePath);
+    Debug.Log(" Checking path: " + assetBundlePath);
 
     if (File.Exists(assetBundlePath))
     {
@@ -80,7 +80,7 @@ void LoadSprite()
 
     if (spikesTexture != null)
     {
-        if (spikeSprite != null) // Ensure it's assigned
+        if (spikeSprite != null) 
         {
             spikeSprite.sprite = Sprite.Create(spikesTexture, new Rect(0, 0, spikesTexture.width, spikesTexture.height), Vector2.zero);
             Debug.Log(" Sprite loaded successfully.");
