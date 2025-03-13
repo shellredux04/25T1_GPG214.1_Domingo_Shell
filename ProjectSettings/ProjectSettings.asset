@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: cdccbfd09a48d4766b127fc761e6e706
+  productGUID: 361e71f087e224517ab8f4398dcddd8f
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -934,14 +934,14 @@ PlayerSettings:
     Standalone: 6
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: 25T1_GPG214.1_Domingo_Shell
+  metroPackageName: 25T1_GPG214.1_Domingo_Shell_2
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: 25T1_GPG214.1_Domingo_Shell
+  metroApplicationDescription: 25T1_GPG214.1_Domingo_Shell_2
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -1022,7 +1022,7 @@ PlayerSettings:
   cloudProjectId: 426b9737-3971-4002-8183-225f971ddaed
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 25T1_GPG214.1_Domingo_Shell 2025-02-13_19-59-43
+  projectName: Platformer-2D
   organizationId: unity_1032001
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
