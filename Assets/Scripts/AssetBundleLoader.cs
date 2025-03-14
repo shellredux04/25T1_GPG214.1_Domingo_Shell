@@ -28,16 +28,16 @@ public class AssetBundleLoader : MonoBehaviour
     
     assetBundlePath = Path.Combine(Application.streamingAssetsPath, "AssetBundles", fileName);
 
-    Debug.Log(" Checking path: " + assetBundlePath);
+  
 
     if (File.Exists(assetBundlePath))
     {
         assetBundle = AssetBundle.LoadFromFile(assetBundlePath);
-        Debug.Log(" Asset Bundle Loaded Successfully!");
+        
     }
     else
     {
-        Debug.LogError(" File does not exist: " + assetBundlePath);
+        
     }
 }
 
@@ -52,7 +52,6 @@ public class AssetBundleLoader : MonoBehaviour
         // List all assets in the bundle for debugging
         foreach (string assetName in assetBundle.GetAllAssetNames())
         {
-            Debug.Log("Asset in bundle: " + assetName);
         }
 
         GameObject spikesPrefab = assetBundle.LoadAsset<GameObject>("Spikes");
@@ -64,7 +63,6 @@ public class AssetBundleLoader : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Failed to load Spikes Prefab");
         }
     }
 
@@ -87,12 +85,10 @@ void LoadSprite()
         }
         else
         {
-            Debug.LogError("spikeSprite is not assigned in the Inspector!");
         }
     }
     else
     {
-        Debug.LogError("Failed to load the sprite from the AssetBundle.");
     }
 }
 

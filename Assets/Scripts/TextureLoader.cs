@@ -68,7 +68,7 @@ public class TextureLoader : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Texture file not found at path: " + texturePath);  
+          
         }
     }
 }

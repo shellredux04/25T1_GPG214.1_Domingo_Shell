@@ -17,15 +17,11 @@ public class AudioLoader : MonoBehaviour
 
         if (audioSource == null)
         {
-            Debug.LogError(" Error: No AudioSource Found on GameObject!");
             return;
         }
 
         streamingPath = Application.streamingAssetsPath;
 
-        Debug.Log("📂 StreamingAssets Path: " + streamingPath);
-
-        // Start with default music
         StartCoroutine(LoadAndPlayMusic(musicGameplay));
     }
 
@@ -34,12 +30,11 @@ public class AudioLoader : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Debug.Log(" Switching to Gameplay Music...");
+           
             StartCoroutine(LoadAndPlayMusic(musicGameplay));
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Debug.Log(" Switching to Gunner Fight Music...");
             StartCoroutine(LoadAndPlayMusic(musicGunnerFight));
         }
     }
@@ -49,11 +44,9 @@ public class AudioLoader : MonoBehaviour
         string filePath = Path.Combine(streamingPath, fileName);
         string url = "file://" + filePath;
 
-        Debug.Log("📂 File Path: " + filePath);
 
         if (!File.Exists(filePath))
         {
-            Debug.LogError(" Audio File Not Found: " + filePath);
             yield break;
         }
 
@@ -63,7 +56,6 @@ public class AudioLoader : MonoBehaviour
 
             if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
             {
-                Debug.LogError(" Error Loading Audio: " + www.error);
             }
             else
             {
@@ -79,7 +71,6 @@ public class AudioLoader : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogError("mFailed to Load Audio Clip! Clip is NULL.");
                 }
             }
         }

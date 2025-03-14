@@ -59,7 +59,7 @@ public class SpriteLoader : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Sprite File not found at path: " + combinedSpriteFilePathLocation);
+            
         }
     }
 }
